@@ -1,0 +1,12 @@
+com/demoqa/utils/Javascript.java
+ com.demoqa.utils.Javascript
+com/demoqa/utils/Times.java
+ com.demoqa.utils.Times
+com/demoqa/utils/UploadPicture.java
+ com.demoqa.utils.UploadPicture
+com/demoqa/models/DataInjections.java
+ com.demoqa.models.DataInjections
+com/demoqa/pageobjects/PracticeFormPage.java
+ com.demoqa.pageobjects.PracticeFormPage
+com/demoqa/steps/PracticeFormPageSteps.java
+ com.demoqa.steps.PracticeFormPageSteps
