@@ -7,7 +7,8 @@ import java.util.Locale;
 public class DataInjections {
 
     Faker faker = new Faker(new Locale("on US"));
-    private String username, password, email, confirmpassword, search, lastname, number, addres, validacion;
+    private String username, password, estate, email, confirmpassword,
+            search, lastname, number, addres, birthday, validacion, subject;
 
     private String fileImput = "imagen.png";
 
@@ -15,7 +16,11 @@ public class DataInjections {
         return username;
     }
 
+    public  String getEstate(){return estate;}
+
     public String getValidacion(){return username;}
+
+    public String getBirthday(){return birthday;}
 
     public String getLastname(){return lastname;}
 
@@ -26,6 +31,8 @@ public class DataInjections {
     public String getEmail() {
         return email;
     }
+
+    public String getSubject(){return subject;}
 
     public String getNumber(){
         return number;
@@ -57,7 +64,10 @@ public class DataInjections {
         this.number = faker.expression("3103970950");
         this.fileImput = faker.expression("imagen.png");
         this.addres = faker.expression("carrera 24 # 45-56");
-        this.validacion = faker.expression(("Thanks for submitting the form"));
+        this.validacion = faker.expression("Thanks for submitting the form");
+        this.birthday = faker.expression("07 May 1985");
+        this.estate = faker.expression("Uttar Pradesh");
+        this.subject = faker.expression("nuevo");
 
     }
 }

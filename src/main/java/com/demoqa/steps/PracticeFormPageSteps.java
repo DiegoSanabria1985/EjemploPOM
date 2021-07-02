@@ -31,6 +31,8 @@ public class PracticeFormPageSteps {
         Times.waitFor(2000);
         Javascript.clickJS(practiceFormPage.getDriver(), practiceFormPage.genderCheck);
         practiceFormPage.sendmobileNumber(dataInjections.getNumber());
+        Javascript.clickJS(practiceFormPage.getDriver(), practiceFormPage.hobbies);
+        Times.waitFor(2000);
         practiceFormPage.sendPicture(UploadPicture.filePath(dataInjections.getFileImput()));
         Times.waitFor(7000);
         practiceFormPage.sendAddres(dataInjections.getAddres());
@@ -39,6 +41,6 @@ public class PracticeFormPageSteps {
         Times.waitFor(5000);
         Javascript.clickJS(practiceFormPage.getDriver(), practiceFormPage.close);
         Times.waitFor(5000);
-        //assertThat(By.xpath("//div[@id=\"example-modal-sizes-title-lg\"]"));
+
     }
 }

@@ -18,6 +18,7 @@ public class PracticeFormPage extends PageObject {
     public By picture = By.id("uploadPicture");
     public By close = By.id("closeLargeModal");
     public By addres = By.id("currentAddress");
+    public By hobbies = By.id("hobbies-checkbox-1");
 
 
     public void sendfirstName(String string){
@@ -32,10 +33,9 @@ public class PracticeFormPage extends PageObject {
     public void sendmobileNumber(String string){
         getDriver().findElement(mobileNumberInput).sendKeys(string);
     }
-    public void senddateBirth(String string){
-        getDriver().findElement(dateBirthInput);
-    }
     public void sendPicture(String string){getDriver().findElement(picture).sendKeys(string);}
     public void sendAddres(String string){getDriver().findElement(addres).sendKeys(string);}
+
+
 
 }
