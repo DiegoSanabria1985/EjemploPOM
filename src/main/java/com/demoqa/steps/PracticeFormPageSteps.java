@@ -18,6 +18,7 @@ public class PracticeFormPageSteps {
 
     @Step
     public void openBrowser(){
+
         practiceFormPage.open();
     }
 

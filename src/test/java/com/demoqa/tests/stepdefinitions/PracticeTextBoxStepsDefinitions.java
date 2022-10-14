@@ -15,6 +15,8 @@ public class PracticeTextBoxStepsDefinitions {
     public void makePracticeOfTheDemoqaPage() {
 
         practiceFormPageSteps.openBrowser();
+
+
     }
 
     @When("^Fill in all the fields of the record$")
